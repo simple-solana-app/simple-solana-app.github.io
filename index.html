@@ -12,20 +12,37 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: black;
+            color: white; /* Ensure text is visible against the black background */
+            flex-direction: column; /* Stack children vertically */
         }
 
-        p {
-            text-align: center;
-            font-size: 1.5rem; 
+        #link_intro {
+            margin-bottom: 40px; /* Space between the h1 and the list */
+            font-size: 2rem; /* Adjust font size as needed */
+        }
+
+        #links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .link {
+            margin-bottom: 20px; 
         }
 
         a {
             text-decoration: none;
-            color: #000; 
+            color: white;
+            font-size: 1.75rem; 
         }
     </style>
 </head>
 <body>
-    <p><a href="https://x.com/simplesolanaapp">twitta</a></p>
+    <h2 id="link_intro">These are just simple links.</h2>
+    <ul id="links">
+        <li class="link"><a href="https://x.com/simplesolanaapp">twitta</a></li>
+        <li class="link"><a href="https://github.com/simple-solana-app/simple">le code</a></li>
+    </ul>
 </body>
 </html>
